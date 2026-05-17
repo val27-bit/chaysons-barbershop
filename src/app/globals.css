@@ -88,20 +88,6 @@ html {
   animation: scale-in 0.3s ease-out;
 }
 
-/* ── Floating effect for scroll-revealed elements ── */
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-/* Lighter float on mobile for subtlety + battery */
-@media (max-width: 640px) {
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-4px); }
-  }
-}
-
 /* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
